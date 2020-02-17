@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>40493459927-m03ed3pid3d6mbb3fehgat5m3tk7ebg1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.40493459927-m03ed3pid3d6mbb3fehgat5m3tk7ebg1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBpAanAWupAwOpgWmCTwI4dV2ZevICz8o4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>40493459927</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Hiloni.locser</string>
+	<key>PROJECT_ID</key>
+	<string>locser-c26a4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>locser-c26a4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:40493459927:ios:1373fcfb82520fa2da0392</string>
+	<key>DATABASE_URL</key>
+	<string>https://locser-c26a4.firebaseio.com</string>
+</dict>
+</plist>
