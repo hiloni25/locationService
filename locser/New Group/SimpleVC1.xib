@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleVC1" customModule="locser" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="NYs-pn-AHC" id="TnS-6r-AXa"/>
+                <outlet property="datePicker1" destination="JDs-ic-v3E" id="nqd-tD-qDi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="NYs-pn-AHC">
+                    <rect key="frame" x="0.0" y="68" width="375" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="603579763.88657606">
+                        <!--2020-02-16 21:02:43 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                        <!--1970-01-01 11:00:00 +0000-->
+                    </date>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="1167476400">
+                        <!--2037-12-30 11:00:00 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="dateSelected:" destination="-1" eventType="valueChanged" id="AAg-Ub-3MQ"/>
+                    </connections>
+                </datePicker>
+                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Start Date" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vFf-5E-OMm">
+                    <rect key="frame" x="43" y="36" width="92" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="End Date" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HKl-gK-RFW">
+                    <rect key="frame" x="30" y="292" width="99" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjg-3w-Lzc">
+                    <rect key="frame" x="313" y="564" width="46" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JDs-ic-v3E">
+                    <rect key="frame" x="0.0" y="340" width="375" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="603580893.29802501">
+                        <!--2020-02-16 21:21:33 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                        <!--1970-01-01 11:00:00 +0000-->
+                    </date>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                        <!--2037-12-31 11:00:00 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="dateSelected1:" destination="-1" eventType="valueChanged" id="Nhj-xZ-i4y"/>
+                    </connections>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="0.3496336478" green="1" blue="0.35987386589999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vFf-5E-OMm" firstAttribute="leading" secondItem="HKl-gK-RFW" secondAttribute="leading" id="1Ow-xw-7Fk"/>
+                <constraint firstAttribute="trailing" secondItem="NYs-pn-AHC" secondAttribute="trailing" id="DaD-Vv-yZy"/>
+                <constraint firstItem="HKl-gK-RFW" firstAttribute="top" secondItem="NYs-pn-AHC" secondAttribute="bottom" constant="21" id="DeQ-QA-HDP"/>
+                <constraint firstItem="NYs-pn-AHC" firstAttribute="trailing" secondItem="JDs-ic-v3E" secondAttribute="trailing" id="FNO-8C-cjY"/>
+                <constraint firstItem="vFf-5E-OMm" firstAttribute="trailing" secondItem="HKl-gK-RFW" secondAttribute="trailing" id="GLU-IR-i9w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vFf-5E-OMm" secondAttribute="trailing" constant="251" id="Iqz-m6-dXo"/>
+                <constraint firstItem="NYs-pn-AHC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RyQ-1Z-EmC"/>
+                <constraint firstItem="vFf-5E-OMm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="66" id="eX9-6h-e38"/>
+                <constraint firstItem="vFf-5E-OMm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="39" id="fXa-hh-HAv"/>
+                <constraint firstItem="NYs-pn-AHC" firstAttribute="leading" secondItem="JDs-ic-v3E" secondAttribute="leading" id="vJB-Um-Pz3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-562.39999999999998" y="67.916041979010501"/>
+        </view>
+        <viewController id="MYi-g6-mEg">
+            <point key="canvasLocation" x="703" y="501"/>
+        </viewController>
+        <view contentMode="scaleToFill" id="7Mj-Dr-UlJ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="Eyt-Le-joo"/>
+            <point key="canvasLocation" x="302" y="-191"/>
+        </view>
+    </objects>
+</document>
